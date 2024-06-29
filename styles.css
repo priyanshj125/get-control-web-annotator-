@@ -1,0 +1,13 @@
+span[title] {
+  background-color: yellow;
+  cursor: pointer;
+}
+span[title]:hover::after {
+  content: attr(title);
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  position: absolute;
+  z-index: 1000;
+  white-space: pre;
+}
